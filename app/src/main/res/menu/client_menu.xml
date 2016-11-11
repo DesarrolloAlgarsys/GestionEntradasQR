@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.ClientsActivity">
+
+    <item
+        android:id="@+id/activateTicket"
+        android:orderInCategory="90"
+        android:title="@string/preference_cat_validation"
+        android:icon="@android:drawable/ic_menu_camera"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="@string/change_user"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/preferences"
+        android:orderInCategory="100"
+        android:title="@string/preferences"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="@string/action_about"
+        app:showAsAction="never" />
+</menu>

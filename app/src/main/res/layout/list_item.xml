@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:id="@+id/StackContent">
+
+    <TextView
+        android:id="@+id/ClientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:text="Nombre del Cliente"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_below="@+id/ClientName"
+        android:layout_marginTop="1dip"
+        android:id="@+id/ClientDNI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:text="DNI/Pasaporte"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/ClientPhone"
+        android:layout_below="@+id/ClientName"
+        android:layout_toRightOf="@id/ClientDNI"
+        android:paddingLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:text="987654321"/>
+
+    <TextView
+        android:id="@+id/TicketCat"
+        android:layout_below="@+id/ClientDNI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Tipo de entrada"/>
+
+    <Switch
+        android:id="@+id/checkState"
+        android:textOn=""
+        android:textOff=""
+        android:layout_below="@+id/ClientName"
+        android:layout_toRightOf="@id/ClientDNI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Gestión Entradas QR</string>
+    <string name="preference_key_sound" translatable="false">sound</string>
+    <string name="preference_key_vibration" translatable="false">vibration</string>
+    <string name="action_about">Sobre esta app</string>
+    <string name="app_legal_statement">Copyright &#169; 2016 by Algarsys</string>
+    <string name="accept">Aceptar</string>
+    <string name="connecting">Conectando con el servidor</string>
+    <string name="error">Error</string>
+    <string name="retry">Reintentar</string>
+    <string name="please_wait">Por favor espere, sólo llevará unos segundos</string>
+    <string name="session_success">Bienvenido %s</string>
+    <string name="validating_ticket">Comprobando entrada</string>
+    <string name="loading_events">Cargando eventos. Solo llevará unos segundos</string>
+    <string name="loading_clients">Cargando asistentes al evento. Solo llevará unos segundos</string>
+    <string name="crash_error_title">Upps&#8230; error no controlado</string>
+    <string name="crash_error_desc">Por favor, evienos el correo para que podamos recibir la información para solucionar el problema. Sólo le llevará unos segundos.</string>
+    <string name="send">Enviar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="login">Identificarse</string>
+    <string name="password">contraseña</string>
+    <string name="userLogin">usuario</string>
+    <string name="change_user">Cambiar de usuario</string>
+    <string name="preferences">Preferencias</string>
+    <string name="preference_vibration_desc">Su dispositivo vibrarál de forma diferente al recibir el resultado de la validación de un ticket</string>
+    <string name="preference_sound_desc">Su dispositivo emitirá un sonido diferente según el resultado de la validación de un ticket</string>
+    <string name="preference_vibration">Vibración</string>
+    <string name="preference_sound">Sonido</string>
+    <string name="preference_cat_validation">Validación de ticket</string>
+    <string name="validation_incorrect">Validación incorrecta</string>
+    <string name="validation_correct">Validación Correcta</string>
+    <string name="eventExit">Salida de evento</string>
+    <string name="eventExitTitle">Salida evento / activar entrada</string>
+    <string name="eventExitDescription">La entrada se volverá a activar para permitir al cliente volver a entrar en el evento posteriormente</string>
+    <string name="my_events">Mis Eventos</string>
+    <string name="another_ticket">¿Quieres validar otro ticket?</string>
+    <string name="reactivation_ok">Reactivación Correcta</string>
+    <string name="reactivation_ok_msg">Este cliente ha sido reactivado</string>
+    <string name="client_validated">El cliente ha sido validado</string>
+    <string name="checking">Comprobando</string>
+    <string name="another_client">¿Quieres validar a este asistente?</string>
+    <string name="reactivate_client">¿Quieres reactivar a este asistente?</string>
+    <string name="no_clients">No hay asistentes para el evento</string>
+    <string name="no_events">No hay Eventos</string>
+    <string name="set_search_key">Escoge un criterio de búsqueda</string>
+    <string name="search_hint">Buscar por nombre o DNI&#8230;</string>
+    <string name="no_progress">0 de 0 Validados</string>
+    <string name="watch_clients">Ver Asistentes</string>
+    <string name="event_error">Ha ocurrido un error al cargar los eventos</string>
+    <string name="client_error">Ha ocurrido un error al cargar los asistentes</string>
+    <string name="check_empty">Aún no hay asistentes validados</string>
+    <string name="all_checked">Todos los asistentes han sido validados</string>
+</resources>

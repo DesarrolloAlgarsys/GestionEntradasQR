@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:id="@+id/StackContent">
+
+    <ImageView
+        android:id="@+id/EventImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/EventName"
+        android:layout_toRightOf="@id/EventImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textSize="17dp"
+        android:text="Nombre del Evento"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_below="@+id/EventName"
+        android:layout_toRightOf="@id/EventImage"
+        android:layout_marginTop="1dip"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/EventDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="DD/MM/YYYY"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_below="@+id/EventName"
+        android:layout_toRightOf="@id/EventDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="900dp"
+        android:textSize="17dp"
+        android:text="" />
+
+</RelativeLayout>

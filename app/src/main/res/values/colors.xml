@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8bacdf</color>
+    <color name="colorPrimaryDark">#688abc</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="validation_ok">#25a159</color>
+    <color name="validation_ok_action">#CCC</color>
+    <color name="reactivation_ok">#8bacdf</color>
+    <color name="reactivation_ok_action">#EEE</color>
+    <color name="validation_error">#C02C68</color>
+    <color name="warning_color">#ccab08</color>
+    <color name="backgroundReactivateTicketDesc">#FFF</color>
+    <color name="check_color">@android:color/holo_green_light</color>
+</resources>

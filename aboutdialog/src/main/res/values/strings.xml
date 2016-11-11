@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AboutDialog</string>
+    <string name="about_general">Sobre esta app</string>
+</resources>
