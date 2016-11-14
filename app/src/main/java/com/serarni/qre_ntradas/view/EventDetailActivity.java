@@ -22,6 +22,7 @@ import com.serarni.qre_ntradas.BuildConfig;
 import com.serarni.qre_ntradas.R;
 import com.serarni.qre_ntradas.model.DataManager;
 import com.serarni.qre_ntradas.model.Events;
+import com.squareup.picasso.Picasso;
 
 import java.io.InputStream;
 import java.net.URL;
@@ -70,7 +71,7 @@ public class EventDetailActivity extends AppCompatActivity {
                 if(EventImage != null) {
                     String URLImage = "http://www.gestionentradas.com/gestion/app/web/upload/events/"
                             +event.getEventImage()+".jpg";
-                    new LoadImage(EventImage).execute(URLImage);
+                    Picasso.with(EventDetailActivity.this).load(URLImage).into(EventImage);
                 }
 
                 EventName.setText(event.getEventName());
@@ -155,38 +156,5 @@ public class EventDetailActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    class LoadImage extends AsyncTask<String, Void, Bitmap> {
-        ImageView bmImage;
-
-        public LoadImage(ImageView bmImage) {
-            this.bmImage = bmImage;
-        }
-
-        @Override
-        protected void onPreExecute(){
-            super.onPreExecute();
-            progressBar.setVisibility(View.VISIBLE);
-        }
-
-        @Override
-        protected Bitmap doInBackground(String... urls) {
-            String urldisplay = urls[0];
-            Bitmap mIcon11 = null;
-            try {
-                mIcon11 = BitmapFactory.decodeStream((InputStream)new URL(urldisplay).getContent());
-
-            } catch (Exception e) {
-                //Log.e("Error", e.getMessage());
-                e.printStackTrace();
-            }
-            return mIcon11;
-        }
-
-        @Override
-        protected void onPostExecute(Bitmap result) {
-            progressBar.setVisibility(View.GONE);
-            bmImage.setImageBitmap(result);
-        }
-    }
 
 }

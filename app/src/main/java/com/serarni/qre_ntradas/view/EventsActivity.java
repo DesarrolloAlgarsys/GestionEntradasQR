@@ -38,6 +38,7 @@ import com.serarni.qre_ntradas.R;
 import com.serarni.qre_ntradas.model.AppPreferences;
 import com.serarni.qre_ntradas.model.DataManager;
 import com.serarni.qre_ntradas.model.Events;
+import com.squareup.picasso.Picasso;
 
 import java.io.InputStream;
 import java.net.URL;
@@ -169,10 +170,11 @@ public class EventsActivity extends AppCompatActivity {
             } else {
                 holder = (ViewHolder) convertView.getTag();
             }
-
-            final String URLImage = "http://www.gestionentradas.com/gestion/app/web/upload/events/"
-                    +EventList.get(position).getEventImage()+".jpg";
-            new LoadImage(holder.eventImage).execute(URLImage);
+            if (holder.eventImage!=null) {
+                final String URLImage = "http://www.gestionentradas.com/gestion/app/web/upload/events/"
+                        + EventList.get(position).getEventImage() + ".jpg";
+                Picasso.with(EventsActivity.this).load(URLImage).into(holder.eventImage);
+            }
 
             holder.eventName.setText(EventList.get(position).getEventName());
             String fecha = EventList.get(position).getEventDate();
@@ -208,35 +210,7 @@ public class EventsActivity extends AppCompatActivity {
 
             return convertView;
         }
-
-        class LoadImage extends AsyncTask<String, Void, Bitmap> {
-            ImageView bmImage;
-
-            public LoadImage(ImageView bmImage) {
-                this.bmImage = bmImage;
-            }
-
-            @Override
-            protected Bitmap doInBackground(String... urls) {
-                String urldisplay = urls[0];
-                Bitmap mIcon11;
-                try {
-                    InputStream in = new java.net.URL(urldisplay).openStream();
-                    mIcon11 = BitmapFactory.decodeStream(in);
-
-                } catch (Exception e) {
-                    //Log.e("Error", e.getMessage());
-                    e.printStackTrace();
-                    mIcon11 = null;
-                }
-                return mIcon11;
-            }
-
-            @Override
-            protected void onPostExecute(Bitmap result) {
-                bmImage.setImageBitmap(result);
-            }
-        }
+        
         class ViewHolder{
             private TextView eventName;
             private TextView eventDate;

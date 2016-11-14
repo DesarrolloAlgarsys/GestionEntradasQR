@@ -22,7 +22,7 @@
     <string name="userLogin">usuario</string>
     <string name="change_user">Cambiar de usuario</string>
     <string name="preferences">Preferencias</string>
-    <string name="preference_vibration_desc">Su dispositivo vibrarál de forma diferente al recibir el resultado de la validación de un ticket</string>
+    <string name="preference_vibration_desc">Su dispositivo vibrará de forma diferente al recibir el resultado de la validación de un ticket</string>
     <string name="preference_sound_desc">Su dispositivo emitirá un sonido diferente según el resultado de la validación de un ticket</string>
     <string name="preference_vibration">Vibración</string>
     <string name="preference_sound">Sonido</string>
